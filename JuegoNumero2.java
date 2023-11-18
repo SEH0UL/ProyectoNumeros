@@ -6,7 +6,7 @@ public class JuegoNumero2 {
 	static Scanner teclado = new Scanner(System.in);
 
 	public static void main(String[] args) {
-		int usuario, contadorPartidas = 0;
+		int opcionUsuario, contadorPartidas = 0;
 
 		do {
 			// Le damos al usuario las opciones de menu
@@ -15,9 +15,9 @@ public class JuegoNumero2 {
 			System.out.println("Si la respuesta es no. Pulsa 2");
 			System.out.println("Cuantas partidas llevas jugadas. Pulsa 3");
 			System.out.println("¿Cúal es el número aleatorio? Pulsa 4");
-			usuario = teclado.nextInt();
+			opcionUsuario = teclado.nextInt();
 			// Las leemos y ejecutamos lo que pide
-			switch (usuario) {
+			switch (opcionUsuario) {
 			case 1:
 				System.out.println("Bienvenido al Juego");
 				contadorPartidas++;
@@ -34,7 +34,7 @@ public class JuegoNumero2 {
 				System.out.println("Pero esto es hacer trampas eeee :/ ");
 			}
 
-		} while (usuario != 2);
+		} while (opcionUsuario != 2);
 
 	}
 
